@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+            <bean id="obj" class="springcoreapps2.Emp">
+           <!--   <property name="empid" value="1234"/>
+            <property name="ename" value="sravanthi"/>
+            <property name="esal" value="50000"/>-->
+            <constructor-arg value="4567"/>
+            <constructor-arg value="sravanthi"/>
+            <constructor-arg value="78000"/>
+            
+            </bean>
+            <bean id="obj2" class="springcoreapps2.Company">
+            <!--  <property name="cid" value="12345"/>
+            <property name="cname" value="CVCORP"/>
+            <property name="cloc" value="KPHB"/>
+            <property name="e" ref="obj"/>-->
+            <constructor-arg value="567"/>
+            <constructor-arg value="cvcorp"/>
+            <constructor-arg value="kavali"/>
+            <constructor-arg>
+            <ref bean="obj"/>
+            </constructor-arg>
+            </bean>
+           </beans> 
+           

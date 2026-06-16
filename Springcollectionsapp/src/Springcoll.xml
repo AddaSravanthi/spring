@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+            <!--  <bean id="std" class="Collections.Student">
+            <property name="ids">
+            <list>
+             <value>1234 </value>
+             <value>1235</value>
+             <value>1278 </value>
+             <value>1278 </value>
+            </list>
+            
+            </property>
+            <property name="names">
+            <list>
+             <value>sravanthi </value>
+             <value>james</value>
+             <value>dennis </value>
+             <value>andy </value>
+            </list>
+            
+            </property>
+            <property name="marks">
+            <list>
+             <value>99 </value>
+             <value>98</value>
+             <value>78 </value>
+             <value>80 </value>
+            </list>
+            
+            </property>
+            </bean>-->
+            <bean id="map" class="Collections.Product">
+            <property name="productvalues">
+            	<map>
+            	<entry key="890" value="mobile"/>
+            	<entry key="990" value="laptop"/>
+            	<entry key="780" value="speakers"/>
+            	<entry key="890" value="mobiles"/>
+            	
+            	</map></property>
+            </bean>
+            
+            </beans>
